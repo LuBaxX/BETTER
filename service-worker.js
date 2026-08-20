@@ -1,8 +1,8 @@
-const CACHE_NAME = "better-v1";
+const CACHE_NAME = "better-v1.1";
 
 const FILES_TO_CACHE = [
     "./",
-    "./BETTER.html",
+    "./index.html",
     "./BETTER.css",
     "./manifest.json",
     "./Icons/icon-192.png",
@@ -12,6 +12,18 @@ const FILES_TO_CACHE = [
 self.addEventListener("install", event => {
     event.waitUntil(
         caches.open(CACHE_NAME).then(cache => cache.addAll(FILES_TO_CACHE))
+    );
+});
+
+self.addEventListener("activate", event => {
+    event.waitUntil(
+        caches.keys().then(keys =>
+            Promise.all(
+                keys
+                    .filter(key => key !== CACHE_NAME)
+                    .map(key => caches.delete(key))
+            )
+        )
     );
 });
 

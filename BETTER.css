@@ -23,7 +23,7 @@ h2 {
    font-size: clamp(0.25rem, 3vw, 1.2rem);
 }
 
-p {
+p, a {
     color: #000000;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: clamp(8px, 2vw, 16px);

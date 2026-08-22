@@ -5,6 +5,38 @@ body {
     font-size: clamp(12px, 2vw, 16px);
 }
 
+.deleted {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.new {
+    color: #00ff15;
+    font-weight: bold;
+}
+
+.updated {
+    color: #8400ff;
+    font-weight: bold;
+}
+
+details {
+    background-color: #e2e2e2;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+}
+
+.version {
+    margin-bottom: 0;
+    padding: 2px 12px;
+}
+
+.version details {
+    margin-bottom: 0;
+    padding: 2px 16px 6px;
+}
+
 h1 {
    color: #ffffff;
    -webkit-text-stroke: 0.04em #000000;
@@ -26,18 +58,11 @@ h2 {
 p, a {
     color: #000000;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: clamp(8px, 2vw, 16px);
+    font-size: clamp(6px, 2vw, 14px);
     line-height: 1.5;
+    font-weight: normal;
 }
 
-details {
-    background-color: #e2e2e2;
-    border-radius: 8px;
-    padding: 12px 16px;
-    margin-bottom: 16px;
-}
-
-.notSure {
-    color: #ff0000;
-    font-weight: bold;
+a {
+    color: #ff83ee
 }

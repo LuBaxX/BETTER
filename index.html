@@ -3,10 +3,22 @@
         <title>BETTER 🤍🤍</title>
         <meta charset="UTF-8" lang="fr">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="BETTER.css" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Orbitron:wght@400;500;700;800&family=Rajdhani:wght@400;500;600;700&display=swap">
+        <link rel="stylesheet" href="BETTER.css">
         <link rel="manifest" href="manifest.json">
     </head>
     <body>
+        <div class="bg-dots" aria-hidden="true">
+            <span class="dot d1"></span>
+            <span class="dot d3"></span>
+            <span class="dot d5"></span>
+            <span class="dot d7"></span>
+            <span class="dot d9"></span>
+            <span class="dot d12"></span>
+        </div>
+
         <h1>BETTER 🤍🤍</h1>
     <details>
         <summary>Introduction 🤍</summary>
@@ -16,102 +28,29 @@
         <p>Il peut se tromper, évoluer et être amélioré. C'est même l'un de ses principes.</p>
         <p>Chaque phrase a été écrite pour être simple, solide et utile.</p> 
         <p>Merci d'avoir visiter Better ! 💘💗</p> 
-        <a href="https://open.spotify.com/intl-fr/track/2c2g8f4fMNA3gnSDcrX5OD">Meilleure ambiance avec cette musique.</a>
+        <a href="https://open.spotify.com/intl-fr/track/1aQVtfrvRqHV4SbTtlCYkE">Meilleure ambiance avec cette musique.</a>
     </details>
 
-    <details>
-        <summary>B🤍- BECOME 🤍</summary>
-        <h2>🤍 ---</h2>
-        <P>...</P>
-        <p>T'es pas foutu de passer le premier jour.</p>
-        <p>T'es pas foutu de passer la première semaine.</p>
-        <p>Alors pourquoi tu t'arrêtes et tu reprends ?</p>
-        <p>Tu n'as qu'une chose à faire, sois régulier.</p>
-        <p>Le premier filtre à la réussite c'est celui-ci.</p>
-        <p>Tu va faire ton premier pas maintenant, pas après.</p>
-        <p>Ensuite tu continueras, encore, encore, et encore.</p>
-        <p>Tu reculeras, tu avanceras, mais tu ne t'arrêteras jamais.</p>
-        <p>C'est comme ça qu'on progresse, pas autrement.</p>
-
-        <p style="color: #237bce;">Soit Régulier</p>
+    <details class="bloc">
+        <summary>BETTER</summary>
+        <h2 id="current-part" class="part-indicator">Devenir</h2>
+        <p class="bloc-text" id="current-phrase" aria-live="polite"></p>
+        <div class="progress-group" id="part-progress-group">
+            <label for="part-progress">Progression des parties.</label>
+            <progress id="part-progress" value="0" max="100">0%</progress>
+        </div>
+        <div class="progress-group" id="zone-progress-group">
+            <label for="zone-progress">Progression de la zone.</label>
+            <progress id="zone-progress" value="0" max="100">0%</progress>
+        </div>
+        <nav class="bloc-navigation" aria-label="Navigation du bloc BETTER">
+            <button type="button" id="previous-phrase">Précédent</button>
+            <button type="button" id="next-phrase">Suivant</button>
+        </nav>
     </details>
 
-    <details>
-        <summary>E🤍- EMPATHIE 🤍</summary>
-        <h2>🤍 ---</h2>
-        <p>Mais être régulier, c'est bien mais pas suffisant.</p>
-        <p>"T'es qu'un monstre pour avoir fait ça."</p>
-        <p>Et t'es pas foutu rester calme ni de dire pardon ?</p>
-        <p>Rattrape-toi maintenant, pas après.</p>
-        <p>Tu as fait du mal, regarde toi !</p>
-        <p>Et surtout va dire pardon. Tu dois te rattraper.</p>
-        <p>Être neutre c'est rester calme et dire pardon.</p>
-        <p>La prochaine fois tu devras faire mieux !</p>
-        <p>Sois un peu responsable de tes erreurs !</p>
 
-        <p style="color: #237bce;">Stay calm and say sorry.</p>
-    </details>
 
-    <details>
-        <summary>T🤍- TAKE 🤍</summary>
-        <h2>🤍 ---</h2>
-        <p>Certaines personnes sont eux aussi des "monstres".</p>
-        <p>Ils sont capables d'humilier, rabaisser, et manipuler.</p>
-        <p>Et tu les crois ? Tu leur fais confiance ?</p>
-        <p>La confiance n'est pas donnée, elle est gagnée.</p>
-        <p>La Confiance, elle se bâtit avec le temps.</p>
-        <p>Elle se bâtit pour se protéger des blessure psychologiques.</p>
-        <p>Tu n'as pas besoin de respirer le même air qu'eux.</p>
-        <p>Fait ce que tu dois faire, et ne laisse personne te faire du mal.</p>
-
-        <p style="color: #237bce;">Confiance</p>
-    </details>
-
-    <details>
-        <summary>T🤍- THINK 🤍</summary>
-        <h2>🤍 ---</h2>
-        <p>Méditer c'est prendre du temps pour soi, pour réfléchir en paix.</p>
-        <p>Après avoir enlevé les comportements toxiques vu précédemment.</p>
-        <p>Méditer c'est aussi dire adieu à la distraction.</p>
-        <p>Tu planifies tes tâches de manière consciente et ton avenir à l'avance.</p>
-        <p>Réfléchis aux critiques que tu reçois, certaines ouvrent un chemin.</p>
-        <p>Mais aussi acceptons d'avoir tort et de pouvoir douter.</p>
-        <p>Mais après la réflexion, il faut agir.</p>
-        <p>Alors c'est inacceptable de se laisser emporter par des distractions !</p>
-
-        <p style="color: #237bce;">No Distractions.</p>
-    </details>
-
-    <details>
-        <summary>E🤍- EVOLVE 🤍</summary>
-        <h2>🤍 ---</h2>
-        <p>Évoluer veut aussi dire laisser une partie de son passé derrière soi.</p>
-        <p>ça veut dire accepter de changer.</p>
-        <p>Si tu veux évoluer, lève toi ce matin et lance des habitudes.</p>
-        <p>Ensuite ces habitudes deviennent des actions. et tu les tiendras.</p>
-        <p>ça peut être vraiment difficile au début. Tu continueras malgré tout.</p>
-        <p>Lève toi maintenant si tu veux évoluer. Personne ne le fera à ta place.</p>
-        <p>Et sans jamais perdre espoir, même dans les moments les plus difficiles.</p>
-        <p>Tu continuras d'avancer, parce qu'une habitude c'est aussi de la régularité.</p>
-
-        <p style="color: #237bce;">Awake.</p>
-    </details>
-
-    <details>
-        <summary>R🤍- REFLECT 🤍</summary>
-        <h2>🤍 ---</h2>
-        <p>Ce monde offre la liberté, mais rien n'est illimité.</p>
-        <p>Prends un moment pour apprécier ce que tu as.</p>
-        <p>Respecte ce que tu possèdes: ton corps, ta famille, tes amis.</p>
-        <p>Un sourire naît plus de ce que l'on possède déjà que de ce que l'on espère.</p>
-        <p>mais le plus beau, c'est aussi de regarder tout ce que l'on a bâti.</p>
-        <p>Se souvenir qu'on est parti de rien.</p>
-        <p>Et avoir réalisé tout ce que l'on possède aujourd'hui.</p>
-        <p>Et pouvoir dire : « Regarde, pourtant je n'ai jamais abandonné malgré tout ! »</p>
-
-    <p style="color: #237bce;">Le recul et la reconnaissance</p>
-
-    </details>
     <details>
         <summary>Versions</summary>
       <footer>
@@ -122,8 +61,8 @@
             <details class="new">
                 <summary>Ajouts</summary>
                 <p>Cette version introduit la première version de Better, avec les fonctionnalités de base. <br>
-                Il y 6 parties de Better: B-Become, E-Empathie, T-Take, T-Think, E-Evolve, R-Reflect <br>
-                Dans chacunes de ces parties ont 2 sous parties, et chaques sous parties à 4 phrases. <br>
+                Il y a 6 parties de Better: B-Become, E-Empathie, T-Take, T-Think, E-Evolve, R-Reflect <br>
+                Dans chacune de ces parties ont 2 sous-parties, pour chaque sous-parties 4 phrases. <br>
                 Ajout du fichier de téléchargement. <br>
                 Ajout de l'introduction à Better et la liste des versions.</p>
             </details>
@@ -170,20 +109,26 @@
             <summary>Version 2.0 -- 19 Septembre 2026</summary>
             <details class="new">
                 <summary>Projets</summary>
-                <p>Ajout de figures de styles pour chaques parties de Better. <br>
-                <em style="color: #237bce;">Niveau de déployage: 100%</em></p>
-                <p>Ajout d'alexandrin et de rimes pour chaques parties de Better. <br>
-                <em style="color: #237bce;">Niveau de déployage: 1%</em></p>
+                <p>Ajout de figures de styles pour chaque parties de Better. <br>
+                <em style="color: #237bce;">Niveau de déploiement: 100%</em></p>
+                <p>Ajout d'alexandrins et de rimes pour chaque parties de Better. <br>
+                <em style="color: #237bce;">Abandonné</em></p>
+                <p>NOUVEAU STYLE: plus de sections avec 12 textes, un seul bloc, avec des transitions fluides. <br>
+                    Cliquer sur suivant pour passer à la prochaine phrase même si elle est dans une autre partie. <br>
+                    Cliquer sur précédent pour revenir à la phrase précédente même si elle est dans une autre partie. <br>
+                    Voir la progression de la partie et de la zone en temps réel. <br>
+                    <em style="color: #237bce;">Niveau de déploiement: 100%</em></p>
+                <p>Suppression des anciens groupes de blocs.</p>
             </details>
             <details class="updated">
                 <summary>Changements</summary>
                 <p>TOUTES les phrases de Better ont été révisées et améliorées. <br>
-                Better à maintenant le droit de frapper sur l'emotion du lecteur, et faire mal. <br>
-                Comme dit, la véritée blaisse.</p>
+                Better a maintenant le droit de frapper sur l'émotion du lecteur, et faire mal. <br>
+                Comme dit, la vérité blesse.</p>
                 <p><strong style="color: #237bce;">Petits changements:</strong> <br> 
-                   une phrase de l'introduction (le remerciment), <br>
-                   Changement de nom des petites sous-parties en bleue, <br>
-                   Changement de musique: Creepin' de Levent Geiger à Pulsebreaker de OTVphonk.
+                   une phrase de l'introduction (le remerciement), <br>
+                   Changement de nom des petites sous-parties en bleu, <br>
+                   Changement de musique: Creepin' de Levent Geiger à YARARARA de AnythingBecomeMoe
                 </p>
             </details>
         </details>
@@ -191,6 +136,7 @@
       </footer>
       </div>
     </details> 
+    <script src="./javascript.js"></script>
     <script>
 if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("./service-worker.js");
